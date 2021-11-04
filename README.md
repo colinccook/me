@@ -4,13 +4,11 @@
 
 Welcome to my personal repository of scripts and musings!
 
-[📄 Check out my scripts](https://github.com/colinccook/me/scripts)
+[📄 Check out my Powershell scripts](https://github.com/colinccook/me/tree/master/Powershell)
 
 ## Repository Showcase
 
 #### Here are some of my proudest repositories:
-
-
 
 ## About me
 
