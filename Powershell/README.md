@@ -33,4 +33,20 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 </details>
 
+### Experimental User Interface scripts
+
+Examples
+
+<details>
+  <summary><b>Showing a modal</b></summary>
+  <br/>First example of using .NET WinForms with Powershell scripts
+
+  ```powershell
+  iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/colinccook/me/master/Powershell/UI/ShowUserInterface.ps1'))
+  ```
+
+</details>
+
+
+
 
