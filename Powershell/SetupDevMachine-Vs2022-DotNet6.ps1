@@ -1,3 +1,5 @@
+choco feature enable -name=exitOnRebootDetected
+
 $testchoco = powershell choco -v
 if(-not($testchoco)){
     Write-Output "Please install Chocolatey first before running"
@@ -21,16 +23,18 @@ choco upgrade -y urlrewrite
 #region .NET and Visual Studio
 
 choco upgrade -y dotnetfx
-choco upgrade -y dotnetcore-sdk
-choco upgrade -y dotnet-5.0-windowshosting
+# choco upgrade -y dotnetcore-sdk 3.1?
+choco upgrade -y dotnet-sdk #6
+# choco upgrade -y dotnet-5.0-windowshosting
+choco upgrade -y dotnet-6.0-windowshosting
 
 choco upgrade -y netfx-4.6.2-devpack
 
-choco upgrade -y visualstudio2019professional
-choco upgrade -y visualstudio2019-workload-azure
-choco upgrade -y visualstudio2019-workload-netcoretools
-choco upgrade -y visualstudio2019-workload-netweb --package-parameters "--includeOptional"
-choco upgrade -y visualstudio2019-workload-node
+choco upgrade -y visualstudio2022professional
+choco upgrade -y visualstudio2022-workload-azure
+choco upgrade -y visualstudio2022-workload-netcoretools
+choco upgrade -y visualstudio2022-workload-netweb --package-parameters "--includeOptional"
+choco upgrade -y visualstudio2022-workload-node
 
 choco upgrade -y codemaid
 
