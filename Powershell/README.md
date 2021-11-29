@@ -15,7 +15,7 @@ choco upgrade all -y
 
 <details>
   <summary><b>🆕 Setting up a development environment with Visual Studio 2022 and .NET 6</b></summary>
-  Visual Studio 2022 has just been released along with .NET 6. This is the install script I'll use to set up my work environment.
+  <br/>Visual Studio 2022 has just been released along with .NET 6. <br/><br/>This is the install script I'll use to set up my work environment.
 
   ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/colinccook/me/master/Powershell/SetupDevMachine-Vs2022-DotNet6.ps1'))
