@@ -2,6 +2,8 @@
 
 I've assembled a few Powershell scripts that I use for personal and work purposes:
 
+> :warning: **Running Powershell from strangers**: Be careful running commands to call from Powershell online and only run from sources you trust/have reviewed yourself.
+
 ### Development machine set-up scripts
 Given a new Windows installation, I wanted to automate the most I could when installing pre-requisites on your machine.
 
@@ -35,11 +37,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ### Experimental User Interface scripts
 
-Examples
-
 <details>
-  <summary><b>Showing a modal</b></summary>
-  <br/>First example of using .NET WinForms with Powershell scripts
+  <summary><b>Showing a simple modal</b></summary><br/>
+  
+  First example of using .NET WinForms with Powershell scripts. The simplest possible example.
 
   ```powershell
   iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/colinccook/me/master/Powershell/UI/ShowUserInterface.ps1'))
@@ -47,6 +48,44 @@ Examples
 
 </details>
 
+<details>
+  <summary><b>Simple drag and drop example</b></summary><br/>
+  
+  Something I know my Dad would like to see an example of!
 
+  ```powershell
+  iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/colinccook/me/master/Powershell/UI/ShowUserInterface.ps1'))
+  ```
 
+  A much better example is found below
+</details>
+
+<details>
+  <summary><b>Simple Rich-Text Format Form</b></summary><br/>
+  
+  Something I know my Dad would like to see an example of!
+
+  ```powershell
+  iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/colinccook/me/master/Powershell/UI/ShowUserInterface.ps1'))
+  ```
+
+  A much better example is found below
+</details>
+
+### External User Interface scripts
+
+Cool examples from other people's projects
+
+> :warning: **External repositories**: Double warning, these are examples I like to refer to but they are in other people's repositories. 
+
+<details>
+  <summary><b>A full featured drag and drop example</b></summary><br/>
+  
+  Drag and drop files which are displayed in a ListBox.
+
+  ```powershell
+  iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/rlv-dan/Tutorial-code/master/A%20drag-and-drop%20GUI%20made%20with%20PowerShell/powershell-gui.ps1'))
+  ```
+
+</details>
 
