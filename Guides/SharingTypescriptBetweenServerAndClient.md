@@ -229,7 +229,7 @@ Finally to verify:
 ## Step 5a: Using Socket.IO to send a message back to the server
 
 - ```npm install socket.io @types/socket.io socket.io-client```
-- replace client.html with
+- replace /src/server/client.html with
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -295,3 +295,8 @@ server.listen(4004, () => {
   console.log('Running at localhost:4004');
 });
 ```
+
+Finally to verify:
+
+- ```npm run build```, to refresh everything in the /dist folder
+- ```npm run start```, clicking the Hit Me button logs a message on the server
