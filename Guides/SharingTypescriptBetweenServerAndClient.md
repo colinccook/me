@@ -278,7 +278,7 @@ app.get('/', (_req, res) => {
   res.sendFile(path.join(__dirname, '../../src/client/client.html'));
 });
 
-app.use(express.static('dist-client'));
+app.use(express.static('dist/client'));
 
 const server = http.createServer(app);
 const io = new socketio.Server(server);
