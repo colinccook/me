@@ -112,13 +112,13 @@ In src/server/index.ts:
 ```
 res.sendFile(path.join(__dirname, 'client.html'));
 ```
-- change package.json and replace
-```
-"build": "tsc;cp src/client/client.html dist/server/client.html",
-```
 - between app.get and app.listen, add:
 ```
 app.use(express.static('dist-client'));
+```
+- change package.json and replace
+```
+"build": "tsc;cp src/client/client.html dist/server/client.html",
 ```
 
 Finally to verify:
