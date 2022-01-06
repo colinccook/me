@@ -89,7 +89,7 @@ app.listen(port, () => {
 
 Finally to verify:
 
-- ```npm run build```, that will create dist-server/index.js
+- ```npm run build```, that will create dist/server/index.js
 - ```npm run start```, you will see Hello world on screen
 
 ## Step 2: Building and serving the front end 
@@ -163,7 +163,7 @@ module.exports = {
 - call ```webpack```, this should update your dist/client/client.js to alert typescript
 - change your package.json scripts/build entry to:
 ```
-"build": "tsc;webpack",
+"build": "tsc;webpack;cp src/client/client.html dist/server/client.html",
 ```
 
 Finally to verify:
