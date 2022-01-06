@@ -1,9 +1,11 @@
+# Sharing Typescript Between Server and Client
+
 After experimenting with the excellent Blazor, I thought I'd try attempt to share Typescript between a server (Node) and a client (Browser).
 
 By the end of this tutorial, we will have 
 - a single Express server that hosts a Typescript compiled front end 
 - Typescript back end, with
-- Bonus, a socket connection that binds the two together.
+- TODO: Bonus, a socket connection that binds the two together.
 
 The structure will look like this:
 
