@@ -114,7 +114,7 @@ res.sendFile(path.join(__dirname, 'client.html'));
 ```
 - between app.get and app.listen, add:
 ```
-app.use(express.static('dist-client'));
+app.use(express.static('dist/client'));
 ```
 - change package.json and replace
 ```
@@ -128,7 +128,7 @@ Finally to verify:
 
 ## Step 3: Using webpack compile client TS into JS
 
-We are serving static JavaScript files in dist-client. We can use WebPack to turn our client TS files and replace client.js with our own code.
+We are serving static JavaScript files in dist/client. We can use WebPack to turn our client TS files and replace client.js with our own code.
 
 - npm install webpack webpack-cli --save-dev
 - npm install --save-dev ts-loader
